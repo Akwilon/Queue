@@ -19,7 +19,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     // is the randomized queue empty?
     public boolean isEmpty() {
-        return position == 0;
+        return size == 0;
     }
 
     // return the number of items on the randomized queue
@@ -60,8 +60,8 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             position = deleteIndex;
             lowestDeletedIndex = deleteIndex;
         }
-
         size--;
+
         return res;
     }
 
